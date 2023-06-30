@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+  </div>
   <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-  <title>Manga4Life</title>
+  <title>manga</title>
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="logo.jpg" alt="logo de manga4life">
-      <h2 class="manga4life">Manga4Life</h2>
+      <img src="content/logo.png" alt="logo de manga4life">
+      <h1 class="manga4life">Manga4Life</h1>
     </div>
+    <div><button onclick="toggleDM()">Cambiar a Modo Oscuro</button></div> 
+      
     <nav>
-      <a href="" class="nav-link">Inicio</a>
-      <a href="" class="nav-link">Mangas</a>
-      <a href="" class="nav-link">Libros y revistas</a>
-      <a href="" class="nav-link">Coleccionable</a>
-      <a href="" class="nav-link">Exclusivos</a>
+      <ul class="menu-horizontal">
+      <li><a href="" class="nav-link">Inicio</a></li>
+      
+       
+          <li>
+            <a href="" class="nav-link">Mangas</a>
+            <ul class="menu-vertical">
+              <li><a href="#">Shonen</a></li>
+              <li><a href="#">Shojo</a></li>
+              <li><a href="#">Seinen</a></li>
+            </ul>
+          </li>
+      <li>
+        <a href="" class="nav-link">Libros y revistas</a>
+        <ul class="menu-vertical">
+          <li><a href="#">Libros</a></li>
+          <li><a href="#">Revistas</a></li>
+          <script src="scripts.js"></script>
+      </li>
+      <li>
+        <a href="" class="nav-link">Coleccionable</a>
+        <ul class="menu-vertical">
+          <li><a href="#">Funkos</a></li>
+          <li><a href="#">Separadores</a></li>
+          <li><a href="#">Calendarios</a></li>
+          <li><a href="#">Cromas</a></li>
+      </li>
+      <li> <a href="" class="nav-link">Exclusivos</a></li>
+      </ul>
     </nav>
   </header>
-  <h1>Manga4Life</h1>
+
+
+  <section class="NovidadesSection">
+    <main class="mainDestacados">
+      <h2>NOVEDADES</h2>
+      <section class="containerProdutos">
+        <div class="produto">
+          <a href="https://lectortmo.com/viewer/5af4466913c13/paginated"> 
+            <img src="/content/mia.jpg" alt="" class="produto__img">
+          <div class="productDescription">
+            <h3 class="produto__title">Made in Abyss</h3>
+            <spam class="produto__price">$90.00</spam>
+          </div>
+        
+        </div>
+    </main>
+  </section>
+
+
+
+
+
+
 </body>
 </html>

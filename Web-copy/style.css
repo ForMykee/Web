@@ -1,7 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: rgb(29, 29, 29);
+  background-color: rgb(245, 245, 245);
+}
+
+body.dark-mode {
+  color: white;
+  background-color: #252525;
+  font-family: 'Lato#1f1f1f-serif;
+}
+
+header {
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+}
+
 h1 {
-  color: black;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 33px;
+  left: 115px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  margin: 50px 0px;
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+  top: 20px;
+  left: 60px;
+}
+
+.NovidadesSection h2 { 
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 300%;
-  letter-spacing: 0.3em;
+  margin: 30px 0px;
+  top: 20px;
+  position: relative;
+  left:180px;
+}
+.NovidadesSection h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  color: white;
+  top: 5px;
+  left: 65px;
+}
+
+.NovidadesSection spam {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 480px;
+  left: 100px;
+}
+
+button {
+  background-color: rgb(124, 124, 124);
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.3s;
+  right: 5px;
+  top: 5px;
+}
+
+
+nav {
+  max-width: auto;
+  margin: auto;
+  font-size: 20px;
+  margin-top: 30px;
+}
+img{
+  width: 100%;
+  border-radius: 15px;
+
+}
+.containerProdutos{
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  
+}
+.menu-horizontal {
+  font-size: 1.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-horizontal > li > a {
+  display: flex;
+  padding: 5px 80px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+  background-color: rgb(255, 125, 78);
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-horizontal > li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  background-color: black;
+}
+
+.menu-vertical li a {
+  display: block;
+  color: white;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 85px;
+  margin-right: 10px;
+}
+
+.NovidadesSection {
+  display: flex;
+}
+
+.NovidadesSection img {
+  cursor: pointer;
+  transition: .5s;
+  width: 180px;
+  height: 250px;
+  margin-left: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
 }

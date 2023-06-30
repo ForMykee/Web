@@ -1,8 +1,12 @@
-window.addEventListener('load', function() {
-    var heading = document.querySelector('h1');
-    heading.addEventListener('click', function() {
-      heading.style.color = 'red';
-    });
-  });
-  
-  alert('Hello, World!');
+const DarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+function toggleDM() {
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+}
+
+window.onload = function() {
+  if (DarkMode) {
+    toggleDM();
+  }
+}
