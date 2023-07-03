@@ -1,23 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="style2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <img src="content/logo.png" alt="logo de manga4life">
+      <h1 class="manga4life">Manga4Life</h1>
+    </div>
+    <nav>
+      <ul class="menu-horizontal">
+        <li><a href="" class="nav-link">Inicio</a></li>
+        <li>
+          <a href="" class="nav-link">Mangas</a>
+          <ul class="menu-vertical">
+            <div class="text-front">
+            <li><a href="#">Shonen</a></li>
+            <li><a href="#">Shojo</a></li>
+            <li><a href="#">Seinen</a></li>
+          </div>
+        </ul>
+        </li>
+        <li>
+          <a href="" class="nav-link">Libros y revistas</a>
+          <ul class="menu-vertical">
+            <div class="text-front">
+            <li><a href="#">Libros</a></li>
+            <li><a href="#">Revistas</a></li>
+            <li><a href="#">Funkos</a></li>
+            <li><a href="#">Separadores</a></li>
+            <li><a href="#">Calendarios</a></li>
+            <li><a href="#">Cromas</a></li>
+          </div>
+        </ul>
+        </li>
+        <li>
+          <a href="" class="nav-link">Exclusivos</a>
+        </li>
+       
+          
+    </nav>
+  </header>
+
     <section class="form-register">
         <h3>Registrate</h3>
         <input type="text" name="controls" id="nombres" class="controls" placeholder="Ingrese su Nombre" >
         <input type="text" name="controls" id="apellidos" class="controls" placeholder="Ingrese su Apellido" >
         <input type="text" name="controls" id="correo" class="controls" placeholder="Ingrese su Correo Electronico" >
-        <input type="text" name="controls" id="contraseña" class="controls" placeholder="Ingrese su Contraseña" >
-        <input type="text" name="controls" id="confirmar" class="controls" placeholder="Ingrese su Contraseña Nuevamente" >
+        <input type="password" name="controls" id="contraseña" class="passw" id="Input" placeholder="Ingrese su Contraseña" >
+        <input type="password" name="controls" id="confirmar" class="passw" id="Input" placeholder="Ingrese su Contraseña Nuevamente" >
         <p>Estoy de acuerdo con <a href="#"> Terminos y condiciones</a></p>
         <input  class="bottons" type="submit" value="Registrar">
         <p><a href="#">¿Ya estas registrado?</a></p>
     </section>
-    
+   
 </body>
+<footer>
+
+<div class="footer_info">
+  <div class="footer_width about">
+    <h2>About</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quibusdam nemo
+       id nobis dolore dolorem dignissimos mollitia eveniet asperiores voluptatem earum
+        laborum odit incidunt, nam modi nihil eos. Illum, rerum.
+      </p>
+        <div class="social-media">
+          <ul>
+            <li><a href="#"><i class="fab fa-faceboook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab instagram"></i></a></li>
+          </ul>
+        </div>
+    <div class="footer_width link">
+      <h2>Quick Link</h2>
+      <ul>
+        <li><a class="#">Home</a></li>
+        <li><a class="#">About</a></li>
+        <li><a class="#">Service</a></li>
+        <li><a class="#">FAQ</a></li>
+        <li><a class="#">Contact</a></li>
+
+      </div>
+    </div>
+      </ul>
+      <div class="footer_width Contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            <span><i class="fas fa-map-market-alt"></i></span>
+            <p>
+              Av. Revolución 1425, Campestre, Álvaro Obregón, 01049 Ciudad de México, CDMX
+            </p>
+          </li>
+          <li>
+            <span><i class="far fa-envelope""></i></span>
+            <a href="#">tumangaonline.com</a>
+          </li>
+          <li>
+            <span><i class="fas fa-phone-volume"></i></span>
+            <a href="#">000 0000 0000</a>
+          </li>
+        </ul>
+  
+  </div>
+</div>
+</footer>
+
 </html>
