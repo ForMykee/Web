@@ -1,0 +1,59 @@
+Comandos principales en MYSQL
+CREATE DATABASE: Crea una nueva base de datos.
+Ejemplo: CREATE DATABASE nombre_bd;
+
+DROP DATABASE: Elimina una base de datos existente.
+Ejemplo: DROP DATABASE nombre_bd;
+
+USE: Selecciona una base de datos para trabajar con ella.
+Ejemplo: USE nombre_bd;
+
+
+CREATE TABLE: Crea una nueva tabla en la base de datos actual.
+Ejemplo:
+
+sql
+Copy code
+CREATE TABLE nombre_tabla (
+  columna1 tipo_dato,
+  columna2 tipo_dato,
+  ...
+);
+
+
+ALTER TABLE: Modifica la estructura de una tabla existente.
+Ejemplo:
+
+ALTER TABLE nombre_tabla
+ADD columna tipo_dato;
+
+SELECT: Recupera datos de una o varias tablas.
+Ejemplo:
+
+SELECT columna1, columna2
+FROM nombre_tabla
+WHERE condicion;
+INSERT INTO: Inserta nuevos registros en una tabla.
+Ejemplo:
+
+
+INSERT INTO nombre_tabla (columna1, columna2)
+VALUES (valor1, valor2);
+UPDATE: Actualiza registros existentes en una tabla.
+Ejemplo:
+
+
+UPDATE nombre_tabla
+SET columna = nuevo_valor
+WHERE condicion;
+DELETE FROM: Elimina registros de una tabla.
+Ejemplo:
+
+DELETE FROM nombre_tabla
+WHERE condicion;
+JOIN: Combina registros de dos o más tablas basándose en una condición.
+Ejemplo:
+
+SELECT columna1, columna2
+FROM tabla1
+INNER JOIN tabla2 ON tabla1.columna = tabla2.columna;
